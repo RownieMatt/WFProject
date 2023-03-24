@@ -1,0 +1,17 @@
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\bin\Debug\net7.0-windows\ABMCollege3Guys.exe
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\bin\Debug\net7.0-windows\ABMCollege3Guys.deps.json
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\bin\Debug\net7.0-windows\ABMCollege3Guys.runtimeconfig.json
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\bin\Debug\net7.0-windows\ABMCollege3Guys.dll
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\bin\Debug\net7.0-windows\ABMCollege3Guys.pdb
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\obj\Debug\net7.0-windows\ABMCollege3Guys.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\obj\Debug\net7.0-windows\ABMCollege3Guys.Form1.resources
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\obj\Debug\net7.0-windows\ABMCollege3Guys.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\obj\Debug\net7.0-windows\ABMCollege3Guys.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\obj\Debug\net7.0-windows\ABMCollege3Guys.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\obj\Debug\net7.0-windows\ABMCollege3Guys.AssemblyInfo.cs
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\obj\Debug\net7.0-windows\ABMCollege3Guys.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\obj\Debug\net7.0-windows\ABMCollege3Guys.dll
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\obj\Debug\net7.0-windows\refint\ABMCollege3Guys.dll
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\obj\Debug\net7.0-windows\ABMCollege3Guys.pdb
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\obj\Debug\net7.0-windows\ABMCollege3Guys.genruntimeconfig.cache
+C:\Users\Admin\Desktop\GitRepos\DemoForReal\ABMCSharpPractice\CSharpPractice\ABMCollege3Guys\ABMCollege3Guys\ABMCollege3Guys\obj\Debug\net7.0-windows\ref\ABMCollege3Guys.dll
