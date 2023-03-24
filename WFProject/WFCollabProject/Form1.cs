@@ -3,18 +3,19 @@ using System.Xml.Linq;
 using System.Data.SqlClient;
 using System.Data;
 
-namespace ABMCollege3Guys
+namespace WFCollabProject
 {
     public partial class Form1 : Form
     {
         public SqlConnection SqlConnect()
         {
             //Put your Data info inside SqlConnection
-            return new SqlConnection(/*@"Data Source=MAT-MAT;Initial Catalog=DemoDB;User ID=sa;Password=rownie29"*/);
+            /*@"Data Source=MAT-MAT;Initial Catalog=DemoDB;User ID=sa;Password=rownie29"*/
+            return new SqlConnection(@"Data Source=MAT-MAT;Initial Catalog=DemoDB;User ID=sa;Password=rownie29");
         }
         public Form1()
         {
-
+            InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)

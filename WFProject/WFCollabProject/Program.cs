@@ -1,4 +1,4 @@
-namespace ABMCollege3Guys
+namespace WFCollabProject
 {
     internal static class Program
     {

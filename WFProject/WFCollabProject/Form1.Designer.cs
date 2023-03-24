@@ -1,4 +1,4 @@
-﻿namespace ABMCollege3Guys
+﻿namespace WFCollabProject
 {
     partial class Form1
     {
