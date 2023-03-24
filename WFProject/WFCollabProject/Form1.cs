@@ -207,7 +207,7 @@ namespace WFCollabProject
                 {
                     cmd.Parameters.AddWithValue("@Contact", DBNull.Value);
                 }
-                    cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();
             }
             catch (Exception ex)
             {
