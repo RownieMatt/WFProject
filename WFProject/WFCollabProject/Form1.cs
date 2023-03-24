@@ -27,6 +27,10 @@ namespace WFCollabProject
             //@Password nvarchar(50),
             //@Name nvarchar(50) null,
             //@Contact int null
+            //usp_deleteUserInfo
+            //usp_updateUserInfo
+            //usp_insertToUserInfo
+            //usp_selectAllFrmUserInfo
             HideInputs();
 
 
@@ -104,11 +108,14 @@ namespace WFCollabProject
         }
         void CreateUser()
         {
+
+            //usp_insertToUserInfo
+
             SqlConnection con = SqlConnect();
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("InsertUser",con);
+                SqlCommand cmd = new SqlCommand("usp_insertToUserInfo", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@Username",SqlDbType.NVarChar).Value = UNTBox.Text.Trim().ToString();
                 cmd.Parameters.AddWithValue("@Password", SqlDbType.NVarChar).Value = PasswordTBox.Text.Trim().ToString();
@@ -148,11 +155,13 @@ namespace WFCollabProject
         }
         void DeleteUser()
         {
+            //usp_deleteUserInfo
+
             SqlConnection con = SqlConnect();
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("DeleteUser", con);
+                SqlCommand cmd = new SqlCommand("usp_deleteUserInfo", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@ID",SqlDbType.BigInt).Value = Int32.Parse(UNTBox.Text.Trim().ToString());
                 cmd.ExecuteNonQuery();
@@ -171,11 +180,12 @@ namespace WFCollabProject
         }
         void ModifyUser()
         {
+            //usp_insertToUserInfo
             SqlConnection con = SqlConnect();
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("ModifyUser", con);
+                SqlCommand cmd = new SqlCommand("usp_insertToUserInfo", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@ID", SqlDbType.BigInt).Value = Int32.Parse(UNTBox.Text.Trim().ToString());
                 cmd.Parameters.AddWithValue("@Username", SqlDbType.NVarChar).Value = UNTBox.Text.Trim().ToString();
