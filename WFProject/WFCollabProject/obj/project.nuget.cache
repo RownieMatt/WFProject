@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c3/2zMnNbt+XHu056ZcudBTXvd0jjG8twSxKSr9Mi2H50w/7qmucRm1kCwRago5ClsiDV7Ah2Kjw33uNkKQzfQ==",
+  "dgSpecHash": "yb1M/I5F1i3XtNduNaLaJOFda26mCE/Cj9SV8pMfGCmnIxLi1K6DJpOLN1VrxiStKqdvXgelTWMchC4JkN90Qw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\ABMCollege3Guys.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\WFCollabProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

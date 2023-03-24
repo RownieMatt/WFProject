@@ -476,9 +476,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\ABMCollege3Guys.csproj",
-      "projectName": "ABMCollege3Guys",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\ABMCollege3Guys.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\WFCollabProject.csproj",
+      "projectName": "WFCollabProject",
+      "projectPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\WFCollabProject.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\obj\\",
       "projectStyle": "PackageReference",
