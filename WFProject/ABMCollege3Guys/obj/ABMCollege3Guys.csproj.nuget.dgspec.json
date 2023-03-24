@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\ABMCollege3Guys.csproj": {}
+    "C:\\Users\\pken1\\Desktop\\3guys\\WFProject\\WFProject\\ABMCollege3Guys\\ABMCollege3Guys.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\ABMCollege3Guys.csproj": {
+    "C:\\Users\\pken1\\Desktop\\3guys\\WFProject\\WFProject\\ABMCollege3Guys\\ABMCollege3Guys.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\ABMCollege3Guys.csproj",
+        "projectUniqueName": "C:\\Users\\pken1\\Desktop\\3guys\\WFProject\\WFProject\\ABMCollege3Guys\\ABMCollege3Guys.csproj",
         "projectName": "ABMCollege3Guys",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\ABMCollege3Guys.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\obj\\",
+        "projectPath": "C:\\Users\\pken1\\Desktop\\3guys\\WFProject\\WFProject\\ABMCollege3Guys\\ABMCollege3Guys.csproj",
+        "packagesPath": "C:\\Users\\pken1\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pken1\\Desktop\\3guys\\WFProject\\WFProject\\ABMCollege3Guys\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\pken1\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
