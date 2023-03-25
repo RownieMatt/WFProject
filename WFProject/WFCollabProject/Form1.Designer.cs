@@ -39,6 +39,13 @@
             this.DiverseB = new System.Windows.Forms.Button();
             this.IDTBox = new System.Windows.Forms.TextBox();
             this.IDLabel = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Contact = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // UNLabel
@@ -122,6 +129,7 @@
             this.DiverseB.TabIndex = 8;
             this.DiverseB.Text = "button1";
             this.DiverseB.UseVisualStyleBackColor = true;
+            this.DiverseB.Click += new System.EventHandler(this.DiverseB_Click);
             // 
             // IDTBox
             // 
@@ -141,11 +149,58 @@
             this.IDLabel.TabIndex = 9;
             this.IDLabel.Text = "ID";
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.Username,
+            this.Password,
+            this.FullName,
+            this.Contact});
+            this.dataGridView1.Location = new System.Drawing.Point(161, 376);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(544, 289);
+            this.dataGridView1.TabIndex = 11;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "ID";
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Username
+            // 
+            this.Username.DataPropertyName = "Username";
+            this.Username.HeaderText = "Username";
+            this.Username.Name = "Username";
+            // 
+            // Password
+            // 
+            this.Password.DataPropertyName = "Password";
+            this.Password.HeaderText = "Password";
+            this.Password.Name = "Password";
+            // 
+            // FullName
+            // 
+            this.FullName.DataPropertyName = "Name";
+            this.FullName.HeaderText = "Name";
+            this.FullName.Name = "FullName";
+            // 
+            // Contact
+            // 
+            this.Contact.DataPropertyName = "Contact";
+            this.Contact.HeaderText = "Contact";
+            this.Contact.Name = "Contact";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 567);
+            this.ClientSize = new System.Drawing.Size(897, 677);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.IDTBox);
             this.Controls.Add(this.IDLabel);
             this.Controls.Add(this.DiverseB);
@@ -160,6 +215,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +234,11 @@
         private Button DiverseB;
         private TextBox IDTBox;
         private Label IDLabel;
+        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn ID;
+        private DataGridViewTextBoxColumn Username;
+        private DataGridViewTextBoxColumn Password;
+        private DataGridViewTextBoxColumn FullName;
+        private DataGridViewTextBoxColumn Contact;
     }
 }

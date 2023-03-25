@@ -22,3 +22,27 @@ C:\Users\Admin\Desktop\GitRepos\WFProject\WFProject\WFCollabProject\obj\Debug\ne
 C:\Users\Admin\Desktop\GitRepos\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.pdb
 C:\Users\Admin\Desktop\GitRepos\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.genruntimeconfig.cache
 C:\Users\Admin\Desktop\GitRepos\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\ref\WFCollabProject.dll
+D:\collab repo\WFProject\WFProject\WFCollabProject\bin\Debug\net7.0-windows\WFCollabProject.exe
+D:\collab repo\WFProject\WFProject\WFCollabProject\bin\Debug\net7.0-windows\WFCollabProject.dll
+D:\collab repo\WFProject\WFProject\WFCollabProject\bin\Debug\net7.0-windows\System.Data.SqlClient.dll
+D:\collab repo\WFProject\WFProject\WFCollabProject\bin\Debug\net7.0-windows\runtimes\win-arm64\native\sni.dll
+D:\collab repo\WFProject\WFProject\WFCollabProject\bin\Debug\net7.0-windows\runtimes\win-x64\native\sni.dll
+D:\collab repo\WFProject\WFProject\WFCollabProject\bin\Debug\net7.0-windows\runtimes\win-x86\native\sni.dll
+D:\collab repo\WFProject\WFProject\WFCollabProject\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\collab repo\WFProject\WFProject\WFCollabProject\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.csproj.AssemblyReference.cache
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.Form1.resources
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.csproj.GenerateResource.cache
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.GeneratedMSBuildEditorConfig.editorconfig
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.AssemblyInfoInputs.cache
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.AssemblyInfo.cs
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.csproj.CoreCompileInputs.cache
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.csproj.CopyComplete
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.dll
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\refint\WFCollabProject.dll
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.pdb
+D:\collab repo\WFProject\WFProject\WFCollabProject\bin\Debug\net7.0-windows\WFCollabProject.deps.json
+D:\collab repo\WFProject\WFProject\WFCollabProject\bin\Debug\net7.0-windows\WFCollabProject.runtimeconfig.json
+D:\collab repo\WFProject\WFProject\WFCollabProject\bin\Debug\net7.0-windows\WFCollabProject.pdb
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\WFCollabProject.genruntimeconfig.cache
+D:\collab repo\WFProject\WFProject\WFCollabProject\obj\Debug\net7.0-windows\ref\WFCollabProject.dll

@@ -11,7 +11,9 @@ namespace WFCollabProject
         {
             //Put your Data info inside SqlConnection
             /*@"Data Source=MAT-MAT;Initial Catalog=DemoDB;User ID=sa;Password=rownie29"*/
-            return new SqlConnection(@"Data Source=MAT-MAT;Initial Catalog=DemoDB;User ID=sa;Password=rownie29");
+            //return new SqlConnection(@"Data Source=MAT-MAT;Initial Catalog=DemoDb;User ID=sa;Password=rownie29");
+
+            return new SqlConnection(@"Data Source=SWINDZ\SQLEXPRESS;Initial Catalog=DemoDb;User ID=sa;Password=john29");
         }
         public Form1()
         {
@@ -31,7 +33,7 @@ namespace WFCollabProject
             //usp_updateUserInfo
             //usp_insertToUserInfo
             //usp_selectAllFrmUserInfo
-            HideInputs();
+            //HideInputs();
 
 
         }
@@ -49,6 +51,7 @@ namespace WFCollabProject
             ContactL.Visible= false;
             ContactNTBox.Visible= false;
             DiverseB.Visible= false;
+            dataGridView1.Visible= false;
             return;
         }
         void ShowSelect()
@@ -137,7 +140,9 @@ namespace WFCollabProject
                     cmd.Parameters.AddWithValue("@Contact", DBNull.Value);
                 }
                 cmd.ExecuteNonQuery();
-                
+
+
+                displayGridView(cmd);
 
 
             }
@@ -165,7 +170,11 @@ namespace WFCollabProject
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@ID",SqlDbType.BigInt).Value = Int32.Parse(UNTBox.Text.Trim().ToString());
                 cmd.ExecuteNonQuery();
-                
+
+                displayGridView(cmd);
+
+
+
             }
             catch (Exception ex)
             {
@@ -180,34 +189,38 @@ namespace WFCollabProject
         }
         void ModifyUser()
         {
-            //usp_insertToUserInfo
+            //usp_updateToUserInfo
             SqlConnection con = SqlConnect();
             try
             {
                 con.Open();
-                SqlCommand cmd = new SqlCommand("usp_insertToUserInfo", con);
+                SqlCommand cmd = new SqlCommand("usp_updateUserInfo", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ID", SqlDbType.BigInt).Value = Int32.Parse(UNTBox.Text.Trim().ToString());
-                cmd.Parameters.AddWithValue("@Username", SqlDbType.NVarChar).Value = UNTBox.Text.Trim().ToString();
-                cmd.Parameters.AddWithValue("@Password", SqlDbType.NVarChar).Value = PasswordTBox.Text.Trim().ToString();
+                cmd.Parameters.AddWithValue("@ID", SqlDbType.BigInt).Value = Int64.Parse(IDTBox.Text.Trim());
+                cmd.Parameters.AddWithValue("@Username", SqlDbType.NVarChar).Value = UNTBox.Text;
+                cmd.Parameters.AddWithValue("@Password", SqlDbType.NVarChar).Value = PasswordTBox.Text;
 
-                if (!String.IsNullOrEmpty(NameTBox.Text.Trim().ToString()))
+                if (!String.IsNullOrEmpty(NameTBox.Text.Trim()))
                 {
-                    cmd.Parameters.AddWithValue("@Name", SqlDbType.NVarChar).Value = NameTBox.Text.Trim().ToString();
+                    cmd.Parameters.AddWithValue("@Name", SqlDbType.NVarChar).Value = NameTBox.Text.Trim();
                 }
                 else
                 {
                     cmd.Parameters.AddWithValue("@Name", DBNull.Value);
                 }
-                if (!String.IsNullOrEmpty(ContactNTBox.Text.Trim().ToString()))
+                if (!String.IsNullOrEmpty(ContactNTBox.Text.Trim()))
                 {
-                    cmd.Parameters.AddWithValue("@Contact", SqlDbType.Int).Value = ContactNTBox.Text.Trim().ToString();
+                    cmd.Parameters.AddWithValue("@Contact", SqlDbType.Int).Value = Int64.Parse(ContactNTBox.Text.Trim());
                 }
                 else
                 {
                     cmd.Parameters.AddWithValue("@Contact", DBNull.Value);
                 }
                 cmd.ExecuteNonQuery();
+
+                displayGridView(cmd);
+
+
             }
             catch (Exception ex)
             {
@@ -218,6 +231,28 @@ namespace WFCollabProject
             {
                 con.Close();
             }
+        }
+
+        private void DiverseB_Click(object sender, EventArgs e)
+        {
+            ModifyUser();
+        }
+
+        public void displayGridView(SqlCommand cmd)
+        {
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+
+            sda.Fill(dt);
+
+            dataGridView1.DataSource = dt;
+
+            dataGridView1.Enabled = true;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
