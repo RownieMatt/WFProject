@@ -2,11 +2,19 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Xml.Linq;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows.Forms;
 
 namespace WFCollabProject
 {
+
+    
+
     public partial class Form1 : Form
     {
+        private static string mode = "";
+
+
+
         public SqlConnection SqlConnect()
         {
             //Put your Data info inside SqlConnection
@@ -33,7 +41,7 @@ namespace WFCollabProject
             //usp_updateUserInfo
             //usp_insertToUserInfo
             //usp_selectAllFrmUserInfo
-            //HideInputs();
+            HideInputs();
 
 
         }
@@ -89,7 +97,7 @@ namespace WFCollabProject
             ContactL.Visible = false;
             ContactNTBox.Visible = false;
             DiverseB.Visible = true;
-            DiverseB.Text = "Create User";
+            DiverseB.Text = "Delete User";
             return;
         }
         void ModifySelect()
@@ -139,8 +147,7 @@ namespace WFCollabProject
                 {
                     cmd.Parameters.AddWithValue("@Contact", DBNull.Value);
                 }
-                cmd.ExecuteNonQuery();
-
+  
 
                 displayGridView(cmd);
 
@@ -235,7 +242,16 @@ namespace WFCollabProject
 
         private void DiverseB_Click(object sender, EventArgs e)
         {
-            ModifyUser();
+            switch (mode) {
+                case "Insert":
+                    CreateUser();
+                    break;
+
+                case "Update":
+                    ModifyUser();
+                    break;
+            }
+         
         }
 
         public void displayGridView(SqlCommand cmd)
@@ -246,11 +262,78 @@ namespace WFCollabProject
             sda.Fill(dt);
 
             dataGridView1.DataSource = dt;
+            dataGridView1.Visible = true;
 
-            dataGridView1.Enabled = true;
+      
+
+
+        }
+
+        private void insertToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mode = "Insert";
+            Queries(mode);
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mode = "Update";
+            Queries("Update");
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mode = "Delete";
+            Queries(mode);
+        }
+
+        private void selectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mode = "Select";
+            Queries(mode);
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            mode = "Exit";
+            Queries(mode);
+        }
+
+        public void Queries(string e)
+        {
+            if (e == "Insert")
+            {
+                MessageBox.Show("Insert");
+                InsertSelect();
+            }
+            else if (e == "Update")
+            {
+                MessageBox.Show("Update");
+             
+            }
+            else if (e == "Delete")
+            {
+                MessageBox.Show("Delete");
+                
+            }
+            else if (e == "Select")
+            {
+                MessageBox.Show("Select");
+                
+            }
+            else if (e == "Exit")
+            {
+                MessageBox.Show("Exit");
+                
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }
