@@ -219,5 +219,54 @@ namespace WFCollabProject
                 con.Close();
             }
         }
+
+        private void insertToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Queries("Insert");
+        }
+
+        private void updateToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Queries("Update");
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Queries("Delete");
+        }
+
+        private void selectToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Queries("Select");
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Queries("Exit");
+        }
+
+        public void Queries(string e)
+        {
+            if (e == "Insert")
+            {
+                MessageBox.Show("Insert");
+            }
+            else if(e == "Update")
+            {
+                MessageBox.Show("Update");
+            }
+            else if (e == "Delete")
+            {
+                MessageBox.Show("Delete");
+            }
+            else if (e == "Select")
+            {
+                MessageBox.Show("Select");
+            }
+            else if (e == "Exit")
+            {
+                MessageBox.Show("Exit");
+            }
+        }
     }
 }
