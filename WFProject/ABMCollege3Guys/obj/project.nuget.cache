@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "O7JbedW/r/o2ONx1dvEYgkK2T4n8YCC9kpOz49yALTK0b/6VgWtOWxCnQuM/yA2TfFKmLNO/4H4aSQDiY6kieg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFProject\\ABMCollege3Guys\\ABMCollege3Guys.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\hangfire.core\\1.7.33\\hangfire.core.1.7.33.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\newtonsoft.json\\11.0.1\\newtonsoft.json.11.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
