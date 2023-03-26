@@ -65,6 +65,9 @@ namespace WFCollabProject
         void ShowSelect()
         {
             //if Select is selected
+            HideInputs();
+            SelectUser();
+
         }
         void InsertSelect()
         {
@@ -81,6 +84,7 @@ namespace WFCollabProject
             IDLabel.Visible = false;
             IDTBox.Visible = false;
             DiverseB.Text = "Create User";
+            SelectUser();
             return;
         }
         void DeleteSelect()
@@ -98,6 +102,7 @@ namespace WFCollabProject
             ContactNTBox.Visible = false;
             DiverseB.Visible = true;
             DiverseB.Text = "Delete User";
+            SelectUser();
             return;
         }
         void ModifySelect()
@@ -115,8 +120,38 @@ namespace WFCollabProject
             IDLabel.Visible = true;
             IDTBox.Visible = true;
             DiverseB.Text = "Modify User";
+            SelectUser();
             return;
         }
+
+        void SelectUser()
+        {
+
+            //usp_insertToUserInfo
+
+            SqlConnection con = SqlConnect();
+            try
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("usp_selectAllFrmUserInfo", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                displayGridView(cmd);
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message.ToString());
+            }
+            finally
+            {
+                con.Close();
+            }
+
+        }
+
         void CreateUser()
         {
 
@@ -128,20 +163,20 @@ namespace WFCollabProject
                 con.Open();
                 SqlCommand cmd = new SqlCommand("usp_insertToUserInfo", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Username",SqlDbType.NVarChar).Value = UNTBox.Text.Trim().ToString();
-                cmd.Parameters.AddWithValue("@Password", SqlDbType.NVarChar).Value = PasswordTBox.Text.Trim().ToString();
+                cmd.Parameters.AddWithValue("@Username",SqlDbType.NVarChar).Value = UNTBox.Text.Trim();
+                cmd.Parameters.AddWithValue("@Password", SqlDbType.NVarChar).Value = PasswordTBox.Text.Trim();
 
-                if (!String.IsNullOrEmpty(NameTBox.Text.Trim().ToString())) 
+                if (!String.IsNullOrEmpty(NameTBox.Text.Trim())) 
                 {
-                    cmd.Parameters.AddWithValue("@Name", SqlDbType.NVarChar).Value =NameTBox.Text.Trim().ToString();
+                    cmd.Parameters.AddWithValue("@Name", SqlDbType.NVarChar).Value =NameTBox.Text.Trim();
                 }
                 else
                 {
                     cmd.Parameters.AddWithValue("@Name", DBNull.Value);
                 }
-                if (!String.IsNullOrEmpty(ContactNTBox.Text.Trim().ToString()))
+                if (!String.IsNullOrEmpty(ContactNTBox.Text.Trim()))
                 {
-                    cmd.Parameters.AddWithValue("@Contact", SqlDbType.Int).Value = ContactNTBox.Text.Trim().ToString();
+                    cmd.Parameters.AddWithValue("@Contact", SqlDbType.Int).Value = ContactNTBox.Text.Trim();
                 }
                 else
                 {
@@ -160,7 +195,7 @@ namespace WFCollabProject
             }
             finally
             {
-                MessageBox.Show("User has been created.");
+     
                 con.Close();
             }
             
@@ -175,8 +210,7 @@ namespace WFCollabProject
                 con.Open();
                 SqlCommand cmd = new SqlCommand("usp_deleteUserInfo", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ID",SqlDbType.BigInt).Value = Int32.Parse(UNTBox.Text.Trim().ToString());
-                cmd.ExecuteNonQuery();
+                cmd.Parameters.AddWithValue("@ID",SqlDbType.BigInt).Value = Int32.Parse(IDTBox.Text.Trim());
 
                 displayGridView(cmd);
 
@@ -223,7 +257,7 @@ namespace WFCollabProject
                 {
                     cmd.Parameters.AddWithValue("@Contact", DBNull.Value);
                 }
-                cmd.ExecuteNonQuery();
+  
 
                 displayGridView(cmd);
 
@@ -250,8 +284,12 @@ namespace WFCollabProject
                 case "Update":
                     ModifyUser();
                     break;
+                case "Delete":
+                    DeleteUser();
+                    break;
+   
             }
-         
+
         }
 
         public void displayGridView(SqlCommand cmd)
@@ -309,22 +347,28 @@ namespace WFCollabProject
             else if (e == "Update")
             {
                 MessageBox.Show("Update");
-             
+                ModifySelect();
+
+
             }
             else if (e == "Delete")
             {
                 MessageBox.Show("Delete");
+                DeleteSelect();
                 
             }
             else if (e == "Select")
             {
                 MessageBox.Show("Select");
-                
+                ShowSelect();
+
+
             }
             else if (e == "Exit")
             {
                 MessageBox.Show("Exit");
-                
+                this.Close();
+
             }
         }
 
