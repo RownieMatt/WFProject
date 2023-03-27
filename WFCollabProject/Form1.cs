@@ -384,41 +384,44 @@ namespace WFCollabProject
             try
             {
                 con.Open();
-                if (!String.IsNullOrEmpty(IDTBox.Text))
+                if (DiverseB.Text == "Update")
                 {
-                    SqlCommand cmd = new SqlCommand("usp_checkIDfrmUserInfo", con);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    cmd.Parameters.AddWithValue("@ID",SqlDbType.BigInt).Value = Int32.Parse(IDTBox.Text.Trim());
-                    SqlDataAdapter da = new SqlDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    da.Fill(dt);
-                    string row = dt.Rows[0][0].ToString();
-                    if (row != "0" )
+                    if (!String.IsNullOrEmpty(IDTBox.Text))
                     {
-                        SearchUser();
-                        con.Close( );
+                        SqlCommand cmd = new SqlCommand("usp_checkIDfrmUserInfo", con);
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@ID", SqlDbType.BigInt).Value = Int32.Parse(IDTBox.Text.Trim());
+                        SqlDataAdapter da = new SqlDataAdapter(cmd);
+                        DataTable dt = new DataTable();
+                        da.Fill(dt);
+                        string row = dt.Rows[0][0].ToString();
+                        if (row != "0")
+                        {
+                            SearchUser();
+                            con.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Account does not exist");
+                            SqlCommand cmd2 = new SqlCommand("usp_selectAllFrmUserInfo", con);
+                            displayGridView(cmd2);
+                            UNTBox.Text = null;
+                            NameTBox.Text = null;
+                            ContactNTBox.Text = null;
+                            PasswordTBox.Text = null;
+                            con.Close();
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Account does not exist");
-                        SqlCommand cmd2 = new SqlCommand("usp_selectAllFrmUserInfo", con);
-                        displayGridView(cmd2);
+                        SqlCommand cmd = new SqlCommand("usp_selectAllFrmUserInfo", con);
+                        displayGridView(cmd);
                         UNTBox.Text = null;
                         NameTBox.Text = null;
                         ContactNTBox.Text = null;
                         PasswordTBox.Text = null;
                         con.Close();
                     }
-                }
-                else
-                {
-                    SqlCommand cmd = new SqlCommand("usp_selectAllFrmUserInfo", con);
-                    displayGridView(cmd);
-                    UNTBox.Text = null;
-                    NameTBox.Text = null;
-                    ContactNTBox.Text = null;
-                    PasswordTBox.Text = null;
-                    con.Close();
                 }
             }
             catch (Exception ex)
