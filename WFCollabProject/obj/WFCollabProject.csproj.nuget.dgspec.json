@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Desktop\\WFCollabProject\\WFCollabProject.csproj": {}
+    "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFCollabProject\\WFCollabProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Desktop\\WFCollabProject\\WFCollabProject.csproj": {
+    "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFCollabProject\\WFCollabProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\WFCollabProject\\WFCollabProject.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFCollabProject\\WFCollabProject.csproj",
         "projectName": "WFCollabProject",
-        "projectPath": "C:\\Users\\Admin\\Desktop\\WFCollabProject\\WFCollabProject.csproj",
+        "projectPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFCollabProject\\WFCollabProject.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Desktop\\WFCollabProject\\obj\\",
+        "outputPath": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFCollabProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
