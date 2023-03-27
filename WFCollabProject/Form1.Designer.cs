@@ -28,218 +28,220 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.UNLabel = new System.Windows.Forms.Label();
-            this.UNTBox = new System.Windows.Forms.TextBox();
-            this.PasswordTBox = new System.Windows.Forms.TextBox();
-            this.PasswordL = new System.Windows.Forms.Label();
-            this.NameTBox = new System.Windows.Forms.TextBox();
-            this.NameL = new System.Windows.Forms.Label();
-            this.ContactNTBox = new System.Windows.Forms.TextBox();
-            this.ContactL = new System.Windows.Forms.Label();
-            this.DiverseB = new System.Windows.Forms.Button();
-            this.IDTBox = new System.Windows.Forms.TextBox();
-            this.IDLabel = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.insertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.selectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
-            this.SuspendLayout();
+            UNLabel = new Label();
+            UNTBox = new TextBox();
+            PasswordTBox = new TextBox();
+            PasswordL = new Label();
+            NameTBox = new TextBox();
+            NameL = new Label();
+            ContactNTBox = new TextBox();
+            ContactL = new Label();
+            DiverseB = new Button();
+            IDTBox = new TextBox();
+            IDLabel = new Label();
+            menuStrip1 = new MenuStrip();
+            fileToolStripMenuItem = new ToolStripMenuItem();
+            insertToolStripMenuItem = new ToolStripMenuItem();
+            updateToolStripMenuItem = new ToolStripMenuItem();
+            deleteToolStripMenuItem = new ToolStripMenuItem();
+            selectToolStripMenuItem = new ToolStripMenuItem();
+            exitToolStripMenuItem = new ToolStripMenuItem();
+            dataGridView1 = new DataGridView();
+            menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            SuspendLayout();
             // 
             // UNLabel
             // 
-            this.UNLabel.AutoSize = true;
-            this.UNLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UNLabel.Location = new System.Drawing.Point(57, 263);
-            this.UNLabel.Name = "UNLabel";
-            this.UNLabel.Size = new System.Drawing.Size(99, 28);
-            this.UNLabel.TabIndex = 0;
-            this.UNLabel.Text = "Username";
+            UNLabel.AutoSize = true;
+            UNLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            UNLabel.Location = new Point(65, 117);
+            UNLabel.Name = "UNLabel";
+            UNLabel.Size = new Size(81, 21);
+            UNLabel.TabIndex = 0;
+            UNLabel.Text = "Username";
             // 
             // UNTBox
             // 
-            this.UNTBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.UNTBox.Location = new System.Drawing.Point(184, 259);
-            this.UNTBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.UNTBox.Name = "UNTBox";
-            this.UNTBox.Size = new System.Drawing.Size(191, 34);
-            this.UNTBox.TabIndex = 1;
+            UNTBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            UNTBox.Location = new Point(176, 114);
+            UNTBox.Name = "UNTBox";
+            UNTBox.Size = new Size(168, 29);
+            UNTBox.TabIndex = 1;
             // 
             // PasswordTBox
             // 
-            this.PasswordTBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PasswordTBox.Location = new System.Drawing.Point(184, 344);
-            this.PasswordTBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.PasswordTBox.Name = "PasswordTBox";
-            this.PasswordTBox.Size = new System.Drawing.Size(191, 34);
-            this.PasswordTBox.TabIndex = 3;
+            PasswordTBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            PasswordTBox.Location = new Point(176, 178);
+            PasswordTBox.Name = "PasswordTBox";
+            PasswordTBox.Size = new Size(168, 29);
+            PasswordTBox.TabIndex = 3;
             // 
             // PasswordL
             // 
-            this.PasswordL.AutoSize = true;
-            this.PasswordL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.PasswordL.Location = new System.Drawing.Point(57, 348);
-            this.PasswordL.Name = "PasswordL";
-            this.PasswordL.Size = new System.Drawing.Size(93, 28);
-            this.PasswordL.TabIndex = 2;
-            this.PasswordL.Text = "Password";
+            PasswordL.AutoSize = true;
+            PasswordL.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            PasswordL.Location = new Point(65, 181);
+            PasswordL.Name = "PasswordL";
+            PasswordL.Size = new Size(76, 21);
+            PasswordL.TabIndex = 2;
+            PasswordL.Text = "Password";
             // 
             // NameTBox
             // 
-            this.NameTBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NameTBox.Location = new System.Drawing.Point(543, 259);
-            this.NameTBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.NameTBox.Name = "NameTBox";
-            this.NameTBox.Size = new System.Drawing.Size(191, 34);
-            this.NameTBox.TabIndex = 5;
+            NameTBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            NameTBox.Location = new Point(490, 114);
+            NameTBox.Name = "NameTBox";
+            NameTBox.Size = new Size(168, 29);
+            NameTBox.TabIndex = 5;
             // 
             // NameL
             // 
-            this.NameL.AutoSize = true;
-            this.NameL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.NameL.Location = new System.Drawing.Point(416, 263);
-            this.NameL.Name = "NameL";
-            this.NameL.Size = new System.Drawing.Size(64, 28);
-            this.NameL.TabIndex = 4;
-            this.NameL.Text = "Name";
+            NameL.AutoSize = true;
+            NameL.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            NameL.Location = new Point(379, 117);
+            NameL.Name = "NameL";
+            NameL.Size = new Size(52, 21);
+            NameL.TabIndex = 4;
+            NameL.Text = "Name";
             // 
             // ContactNTBox
             // 
-            this.ContactNTBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ContactNTBox.Location = new System.Drawing.Point(543, 348);
-            this.ContactNTBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.ContactNTBox.Name = "ContactNTBox";
-            this.ContactNTBox.Size = new System.Drawing.Size(191, 34);
-            this.ContactNTBox.TabIndex = 7;
+            ContactNTBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            ContactNTBox.Location = new Point(490, 181);
+            ContactNTBox.Name = "ContactNTBox";
+            ContactNTBox.Size = new Size(168, 29);
+            ContactNTBox.TabIndex = 7;
             // 
             // ContactL
             // 
-            this.ContactL.AutoSize = true;
-            this.ContactL.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ContactL.Location = new System.Drawing.Point(393, 352);
-            this.ContactL.Name = "ContactL";
-            this.ContactL.Size = new System.Drawing.Size(157, 28);
-            this.ContactL.TabIndex = 6;
-            this.ContactL.Text = "Contact Number";
+            ContactL.AutoSize = true;
+            ContactL.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            ContactL.Location = new Point(359, 184);
+            ContactL.Name = "ContactL";
+            ContactL.Size = new Size(125, 21);
+            ContactL.TabIndex = 6;
+            ContactL.Text = "Contact Number";
             // 
             // DiverseB
             // 
-            this.DiverseB.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DiverseB.Location = new System.Drawing.Point(393, 413);
-            this.DiverseB.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.DiverseB.Name = "DiverseB";
-            this.DiverseB.Size = new System.Drawing.Size(91, 57);
-            this.DiverseB.TabIndex = 8;
-            this.DiverseB.Text = "button1";
-            this.DiverseB.UseVisualStyleBackColor = true;
+            DiverseB.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            DiverseB.Location = new Point(359, 230);
+            DiverseB.Name = "DiverseB";
+            DiverseB.Size = new Size(80, 43);
+            DiverseB.TabIndex = 8;
+            DiverseB.Text = "button1";
+            DiverseB.UseVisualStyleBackColor = true;
+            DiverseB.Click += DiverseB_Click;
             // 
             // IDTBox
             // 
-            this.IDTBox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.IDTBox.Location = new System.Drawing.Point(344, 197);
-            this.IDTBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.IDTBox.Name = "IDTBox";
-            this.IDTBox.Size = new System.Drawing.Size(191, 34);
-            this.IDTBox.TabIndex = 10;
+            IDTBox.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            IDTBox.Location = new Point(316, 68);
+            IDTBox.Name = "IDTBox";
+            IDTBox.Size = new Size(168, 29);
+            IDTBox.TabIndex = 10;
+            IDTBox.MouseLeave += IDTBox_MouseLeave;
             // 
             // IDLabel
             // 
-            this.IDLabel.AutoSize = true;
-            this.IDLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.IDLabel.Location = new System.Drawing.Point(291, 201);
-            this.IDLabel.Name = "IDLabel";
-            this.IDLabel.Size = new System.Drawing.Size(31, 28);
-            this.IDLabel.TabIndex = 9;
-            this.IDLabel.Text = "ID";
+            IDLabel.AutoSize = true;
+            IDLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            IDLabel.Location = new Point(270, 71);
+            IDLabel.Name = "IDLabel";
+            IDLabel.Size = new Size(25, 21);
+            IDLabel.TabIndex = 9;
+            IDLabel.Text = "ID";
             // 
             // menuStrip1
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1025, 28);
-            this.menuStrip1.TabIndex = 11;
-            this.menuStrip1.Text = "menuStrip1";
+            menuStrip1.ImageScalingSize = new Size(20, 20);
+            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Padding = new Padding(5, 2, 0, 2);
+            menuStrip1.Size = new Size(897, 24);
+            menuStrip1.TabIndex = 11;
+            menuStrip1.Text = "menuStrip1";
             // 
             // fileToolStripMenuItem
             // 
-            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.insertToolStripMenuItem,
-            this.updateToolStripMenuItem,
-            this.deleteToolStripMenuItem,
-            this.selectToolStripMenuItem,
-            this.exitToolStripMenuItem});
-            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(46, 24);
-            this.fileToolStripMenuItem.Text = "File";
+            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { insertToolStripMenuItem, updateToolStripMenuItem, deleteToolStripMenuItem, selectToolStripMenuItem, exitToolStripMenuItem });
+            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            fileToolStripMenuItem.Size = new Size(37, 20);
+            fileToolStripMenuItem.Text = "File";
             // 
             // insertToolStripMenuItem
             // 
-            this.insertToolStripMenuItem.Name = "insertToolStripMenuItem";
-            this.insertToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.insertToolStripMenuItem.Text = "Insert";
-            this.insertToolStripMenuItem.Click += new System.EventHandler(this.insertToolStripMenuItem_Click);
+            insertToolStripMenuItem.Name = "insertToolStripMenuItem";
+            insertToolStripMenuItem.Size = new Size(112, 22);
+            insertToolStripMenuItem.Text = "Insert";
+            insertToolStripMenuItem.Click += insertToolStripMenuItem_Click;
             // 
             // updateToolStripMenuItem
             // 
-            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
-            this.updateToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.updateToolStripMenuItem.Text = "Update";
-            this.updateToolStripMenuItem.Click += new System.EventHandler(this.updateToolStripMenuItem_Click);
+            updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            updateToolStripMenuItem.Size = new Size(112, 22);
+            updateToolStripMenuItem.Text = "Update";
+            updateToolStripMenuItem.Click += updateToolStripMenuItem_Click;
             // 
             // deleteToolStripMenuItem
             // 
-            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.deleteToolStripMenuItem.Text = "Delete";
-            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
+            deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            deleteToolStripMenuItem.Size = new Size(112, 22);
+            deleteToolStripMenuItem.Text = "Delete";
+            deleteToolStripMenuItem.Click += deleteToolStripMenuItem_Click;
             // 
             // selectToolStripMenuItem
             // 
-            this.selectToolStripMenuItem.Name = "selectToolStripMenuItem";
-            this.selectToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.selectToolStripMenuItem.Text = "Select";
-            this.selectToolStripMenuItem.Click += new System.EventHandler(this.selectToolStripMenuItem_Click);
+            selectToolStripMenuItem.Name = "selectToolStripMenuItem";
+            selectToolStripMenuItem.Size = new Size(112, 22);
+            selectToolStripMenuItem.Text = "Select";
+            selectToolStripMenuItem.Click += selectToolStripMenuItem_Click;
             // 
             // exitToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            exitToolStripMenuItem.Size = new Size(112, 22);
+            exitToolStripMenuItem.Text = "Exit";
+            exitToolStripMenuItem.Click += exitToolStripMenuItem_Click;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(65, 279);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowTemplate.Height = 25;
+            dataGridView1.Size = new Size(698, 232);
+            dataGridView1.TabIndex = 12;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1025, 756);
-            this.Controls.Add(this.IDTBox);
-            this.Controls.Add(this.IDLabel);
-            this.Controls.Add(this.DiverseB);
-            this.Controls.Add(this.ContactNTBox);
-            this.Controls.Add(this.ContactL);
-            this.Controls.Add(this.NameTBox);
-            this.Controls.Add(this.NameL);
-            this.Controls.Add(this.PasswordTBox);
-            this.Controls.Add(this.PasswordL);
-            this.Controls.Add(this.UNTBox);
-            this.Controls.Add(this.UNLabel);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(897, 567);
+            Controls.Add(dataGridView1);
+            Controls.Add(IDTBox);
+            Controls.Add(IDLabel);
+            Controls.Add(DiverseB);
+            Controls.Add(ContactNTBox);
+            Controls.Add(ContactL);
+            Controls.Add(NameTBox);
+            Controls.Add(NameL);
+            Controls.Add(PasswordTBox);
+            Controls.Add(PasswordL);
+            Controls.Add(UNTBox);
+            Controls.Add(UNLabel);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -262,5 +264,6 @@
         private ToolStripMenuItem deleteToolStripMenuItem;
         private ToolStripMenuItem selectToolStripMenuItem;
         private ToolStripMenuItem exitToolStripMenuItem;
+        private DataGridView dataGridView1;
     }
 }

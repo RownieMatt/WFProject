@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CcbRQQiLmNxsHc/Yc1FxKKFTEuotnjYKICTSPTkZKiGpUuuyHQYp01wGy7O8MkZkEnK+m/LI6QbH9dvDkGBODw==",
+  "dgSpecHash": "CEvUrpDKy4DmD6ykzShTFtesyIU7O2gv1bTBiMcu2GnbiFTfPtPsdAYw9QwoTQDtqzcAZ5BTgpX/iEOHvd+cbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\WFCollabProject\\WFCollabProject.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Desktop\\GitRepos\\WFProject\\WFCollabProject\\WFCollabProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
